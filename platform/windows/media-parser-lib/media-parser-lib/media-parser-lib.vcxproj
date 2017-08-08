@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{855E235E-F7DB-475F-B86D-F285BC56B4AC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>mediaparserlib</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;MEDIAPARSERLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;MEDIAPARSERLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;MEDIAPARSERLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;MEDIAPARSERLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\ByteStreamReaderWriter.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\mp4_atom_tree.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\mp4_top_boxes.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\mp4_tree_node.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\utility.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_avc1.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_avcC.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_dinf.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_dref.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_dumm.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_factory.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_ftyp.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_hdlr.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_mdat.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_mdhd.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_mdia.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_minf.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_moov.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_mvhd.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_smhd.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_stbl.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_stco.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_stsc.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_stsd.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_stss.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_stsz.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_stts.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_tkhd.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_trak.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_udta.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_ukwn.h" />
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_vmhd.h" />
+    <ClInclude Include="media-parser-interface.h" />
+    <ClInclude Include="media-parser-lib.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\ByteStreamReaderWriter.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\media_parser.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\mp4_atomcpp.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\mp4_atom_factory.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\mp4_atom_tree.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\mp4_top_boxes.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\mp4_tree_node.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\utility.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_avc1.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_avcC.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_dinf.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_dref.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_dumm.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_ftyp.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_hdlr.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_mdat.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_mdhd.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_mdia.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_minf.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_moov.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_mvhd.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_smhd.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_stbl.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_stco.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_stsc.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_stsd.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_stss.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_stsz.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_stts.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_tkhd.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_trak.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_udta.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_ukwn.cpp" />
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_vmhd.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="media-parser-lib.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

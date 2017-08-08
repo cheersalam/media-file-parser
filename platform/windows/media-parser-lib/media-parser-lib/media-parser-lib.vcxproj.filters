@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="mp4-atoms">
+      <UniqueIdentifier>{80bc3212-918c-4b26-80b9-117baa34f82e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mp4-atoms\inc">
+      <UniqueIdentifier>{5243831f-6dc9-4eaa-ab04-f03e622f580e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mp4-atoms\src">
+      <UniqueIdentifier>{bfdbe3b0-5804-4421-8b3e-40ce77b7fbbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mp4-atom-tree">
+      <UniqueIdentifier>{67723ea5-3cd0-4c83-808f-15312cb8a806}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="media-parser-interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="media-parser-lib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_avc1.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_avcC.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_dinf.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_dref.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_dumm.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_factory.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_ftyp.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_hdlr.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_mdat.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_mdhd.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_mdia.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_minf.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_moov.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_mvhd.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_smhd.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_stbl.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_stco.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_stsc.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_stsd.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_stss.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_stsz.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_stts.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_tkhd.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_trak.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_udta.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_ukwn.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\inc\mp4_atom_vmhd.h">
+      <Filter>mp4-atoms\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\ByteStreamReaderWriter.h">
+      <Filter>mp4-atom-tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\mp4_atom_tree.h">
+      <Filter>mp4-atom-tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\mp4_top_boxes.h">
+      <Filter>mp4-atom-tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\mp4_tree_node.h">
+      <Filter>mp4-atom-tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\utility.h">
+      <Filter>mp4-atom-tree</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="media-parser-lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_avc1.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_avcC.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_dinf.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_dref.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_dumm.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_ftyp.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_hdlr.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_mdat.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_mdhd.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_mdia.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_minf.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_moov.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_mvhd.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_smhd.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_stbl.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_stco.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_stsc.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_stsd.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_stss.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_stsz.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_stts.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_tkhd.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_trak.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_udta.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_ukwn.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atoms\src\mp4_atom_vmhd.cpp">
+      <Filter>mp4-atoms\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\ByteStreamReaderWriter.cpp">
+      <Filter>mp4-atom-tree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\media_parser.cpp">
+      <Filter>mp4-atom-tree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\mp4_atom_factory.cpp">
+      <Filter>mp4-atom-tree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\mp4_atom_tree.cpp">
+      <Filter>mp4-atom-tree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\mp4_atomcpp.cpp">
+      <Filter>mp4-atom-tree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\mp4_top_boxes.cpp">
+      <Filter>mp4-atom-tree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\mp4_tree_node.cpp">
+      <Filter>mp4-atom-tree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\source\mp4-file-parser\mp4-atom-tree\utility.cpp">
+      <Filter>mp4-atom-tree</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
